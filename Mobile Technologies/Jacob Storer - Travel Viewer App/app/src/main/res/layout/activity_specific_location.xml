@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+    android:background="#CCFFFF">
+
+    <TextView
+        android:id="@+id/lblLocationTitle"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+            />
+
+    <TextView
+        android:id="@+id/lblCountryName"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLocationTitle"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="2dp"
+        />
+
+    <ImageView
+        android:id="@+id/lblCountryFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCountryName"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/lblCountryLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCountryFlag"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
+

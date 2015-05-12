@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#CCFFFF"
+        >
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="390dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bannerimage"/>
+
+        <ImageView
+            android:id="@+id/imgFace"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/jacobface2"
+            android:layout_above="@+id/imgLocation"
+            android:layout_margin="20dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/lblName"
+            android:text="Jacob Storer"
+            android:gravity="right"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBanner"
+            android:layout_margin="20dp"
+            android:textColor="#212121"/>
+
+
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/locationsymbol"
+            android:layout_below="@+id/lblName"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/lblLocation"
+            android:text="Bath, England"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imgLocation"
+            android:layout_alignBottom="@id/imgLocation"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imgLocation"
+            android:textColor="#212121"/>
+
+        <ImageView
+            android:id="@+id/imgGithub"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/githublogo"
+            android:layout_below="@+id/imgLocation"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/lblGithub"
+            android:text="storerj1"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imgGithub"
+            android:layout_alignBottom="@id/imgGithub"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imgGithub"
+            android:textColor="#212121"/>
+
+        <ImageView
+            android:id="@+id/imgBirthday"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/birthdaysymbol"
+            android:layout_below="@+id/imgGithub"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/lblBirthday"
+            android:text="27th August"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imgBirthday"
+            android:layout_alignBottom="@id/imgBirthday"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imgBirthday"
+            android:textColor="#212121"/>
+
+
+        <ImageView
+            android:id="@+id/imgWeb"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/websymbol"
+            android:layout_below="@+id/imgBirthday"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/lblWeb"
+            android:text="www.google.co.uk"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imgWeb"
+            android:layout_alignBottom="@id/imgWeb"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imgWeb"
+            android:textColor="#212121"/>
+
+    </RelativeLayout>
+</LinearLayout>
